@@ -8,24 +8,25 @@ pause(){
   read -p "Press [Enter] key to continue..." fackEnterKey
 }
 
+#function for foldermaker
 one(){
     ./foldermaker.sh
 	echo "Create a folder"
         pause
 }
-# 
+#function for foldercopier
 two(){
     ./foldercopier.sh
 	echo "Copy a folder"
         pause
 }
-
+#function for setPassword
 three (){
     ./setPassword.sh
     echo "Set a password"
         pause
 }
-# function to display menus
+#function to display menus
 show_menus() {
 	clear
     echo "Select an option:"
@@ -49,11 +50,9 @@ read_options(){
 	esac
 }
  
-# ----------------------------------------------
-# Step #3: Trap CTRL+C, CTRL+Z and quit singles
-# ----------------------------------------------
+
+#Trap CTRL+C, CTRL+Z and quit singles
 trap '' SIGINT SIGQUIT SIGTSTP
- 
 
 #Main logic - infinite loop showing the menu and reading the options
 while true
