@@ -26,5 +26,5 @@
  }
 
  getNumber "please type a number between 1 and 100" 1 100
- echo "Correct!"
+ echo "Right!"
  
