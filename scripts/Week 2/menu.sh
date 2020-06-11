@@ -52,7 +52,7 @@ read_options(){
  
 
 #Trap CTRL+C, CTRL+Z and quit singles
-trap '' SIGINT SIGQUIT SIGTSTP
+#trap '' SIGINT SIGQUIT SIGTSTP
 
 #Main logic - infinite loop showing the menu and reading the options
 while true
