@@ -45,31 +45,31 @@ two(){
         pause
 }
 #function for setPassword
-three (){
+three(){
     ../'Week 2'/setPassword.sh
     printf "\nClosed set password\n"
         pause
 }
 #function for Calculator
-four (){
+four(){
     bc
     printf "\nClosed Calculator\n"
         pause
 }
 #function for Create Week Folders
-five (){
+five(){
     ./megafoldermaker.sh
     printf  "\nClosed Folder Maker\n"
         pause
 }
 #function for Check Filenamesr
-six (){
+six(){
     ./filenames.sh
     printf "\n Closed Check Filenames\n"
         pause
 }
 #function for Download a File
-seven (){
+seven(){
     ./downloader.sh
     printf "\nClosed Web Downloader\n"
         pause
