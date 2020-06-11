@@ -15,7 +15,7 @@ if [[ "$passwordCheck" = '-: OK' ]]
     then 
         echo -e "\e[1;32m Access Granted\e[0m" # prints if conditional statement is met 
         ../'Week 3'/megamenu.sh
-        exit 0 # exit code 0
+        exit 0 # exit code 0 as it will now link to the megamenu from week 3.
         
 
 #conditional statement checking FAILED result of sha256sum output of $password based on secret.txt. double brackets as testing a string captured within $passwordCheck

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Source for inital menu schema:
+
+# Linux Shell Scripting Tutorial - A Beginners Handbook (2016). Menu driven scripts. Cyberciti https://bash.cyberciti.biz/guide/Menu_driven_scripts
+
 #password check integrated into script using week2 PasswordCheck.sh script. changed script to return instead of exit 0
 passwordCheck() {
 
