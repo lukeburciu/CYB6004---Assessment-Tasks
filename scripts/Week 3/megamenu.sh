@@ -102,7 +102,7 @@ read_options(){
 		6) six ;;
 		7) seven ;;
         8) exit ;;
-		*) echo -e "Error..." && sleep 15
+		*) echo -e "\033[31mError...\033[0m" && sleep 100
 	esac
 }
  
