@@ -4,7 +4,7 @@
 IpInfo="$(./IpInfo.sh)"
 
 #this command uses sed to accomplish the following:
-    # -n is used for silent modifications
+    # -n is used for silent modifications, not echo'ed
     #  s within the '/IP addr....' is used to substitute the line for a newer line
     #  p within the sed command 'prints' the command
     #  repeating 'IP Address:' twice is done to 1. Establish what line is being used/subd from IpInfo, and;

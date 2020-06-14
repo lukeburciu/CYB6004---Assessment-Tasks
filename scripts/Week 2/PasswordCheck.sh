@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#password: SecretPassword
-
-
 echo -n "Hi $USER, please enter secret password: " #Posts message asking for password
 read -s  password  #text input, hidden
 echo #new line
