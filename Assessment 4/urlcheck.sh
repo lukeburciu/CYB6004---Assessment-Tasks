@@ -8,7 +8,7 @@ urlCheck()
     echo -e "full url e.g: 'hxxps://www[.]google[.]com/' "
     read -p "URL: " inputUrl
     inputUrl="/submit/url/"
-    exec python3 requestor.py "$inputHash" "$inputUrl" 
+    #exec python3 requestor.py "$inputHash" "$inputUrl" 
 
 
 curl -X POST "https://www.hybrid-analysis.com/api/v2/submit/url"/
