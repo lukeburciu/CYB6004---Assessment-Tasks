@@ -13,7 +13,8 @@ echo -e "\e[36mPlease submit full domain name below..\e[0m\n"
 echo -e "Example domains: google.com, https://google.com, http://google.com"
 
 
-getUrl() {
+getUrl() 
+{
 
   #prompts user for URL input.
   read -p "URL: " url
