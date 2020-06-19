@@ -50,7 +50,7 @@ ipCheck()
     
     #awk -F"," 'BEGIN { OFS = "," } {$5'
     
-    printf "\n\n,,,,,Report for: $ip. Undetected referrer samples - $now \n" >> ./report/ipreporthistory.csv
+    printf "\n\n,,,,Report for: $ip. Undetected referrer samples - $now \n" >> ./report/ipreporthistory.csv
     cat ./report/ipreport.csv >> ./report/ipreporthistory.csv
     
     echo -e "\e[46mUndetected referrer samples for $ip\e[0m\n"
