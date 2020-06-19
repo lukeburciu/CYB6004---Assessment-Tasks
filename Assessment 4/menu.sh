@@ -9,19 +9,19 @@ pause(){
 
 # List of menu items specified for the scraper tool.
 one(){
-    ./commands/hashcheck.sh #
+    ./hashcheck.sh #
 	printf "\nClosed Hash checker\n" 
         pause
 }
 #function for foldercopier
 two(){
-    ./commands/domainreport.sh 
+    ./domainreport.sh 
 	printf "\nClosed domain report\n" 
         pause
 }
 #function for setPassword
 three(){
-    ./commands/ipreport.sh 
+    ./ipreport.sh 
     printf "\nClosed IP report\n" 
         pause
 }
