@@ -18,12 +18,18 @@ ipValid() {
    read -p "IP Address: " ip
 
   #Regular expressions for IP address
-    ipRegex='\b([0-9]{1,3}\.){3}[0-9]{1,3}\b'
-
   #Checks to see if IP is valid
     #if not a valid IP, will prompt to enter a valid IP referencing the function.
-    if [[ $ip =~ $ipRegex ]]; then
-        ipCheck
+    if expr "$ip" : '[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*$' > /dev/null; then
+      IFS=.
+      set $ip
+      for quad in 1 2 3 4; do
+        if eval [ \$$quad -gt 255 ]; then
+          echo "Invalid IP address: ($ip). Please enter a valid IP address"
+          ipValid
+        fi
+      done
+      ipCheck
     else
         echo "Invalid IP address: ($ip). Please enter a valid IP address"
         ipValid
