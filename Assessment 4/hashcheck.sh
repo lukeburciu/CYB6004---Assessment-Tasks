@@ -14,14 +14,20 @@ getHash() {
     read -p "Hash: " file_hash
 
   #Regular expressions for md5, sha256, sha1
-    hashRegex='^(((([a-z,1-9]+)|[0-9,A-Z]+))([^a-z\.]))*'
+    sha1Regex='\b[0-9a-f]{40}\b'
+    sha256Regex='\b[A-Fa-f0-9]{64}\b'
+    md5Regex='/^[a-f0-9]{32}$/i'
 
   #Checks to see if hash is valid to: md5, sha256, sha1
     #if not a valid url, will prompt to enter a valid hash referencing the function.
-    if [[ $file_hash =~ $hashRegex ]]; then
+    if [[ $file_hash =~ $sha1Regex ]]; then
+        hashCheck
+    elif [[ $file_hash =~ $sha256Regex ]]; then
+        hashCheck
+    elif [[ $file_hash =~ $md5Regex ]]; then    
         hashCheck
     else
-        echo "Invalid url: ($url). Please enter a valid URL"
+        echo "Invalid hash: ($file_hash). Please enter a valid SHA256, SHA1 or MD5 hash"
         getHash
     fi
 

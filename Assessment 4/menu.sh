@@ -1,8 +1,10 @@
 #!/bin/bash
 
 
+# REFERENCES.
+    # Linux Shell Scripting Tutorial - A Beginners Handbook (2016). Menu driven scripts. Cyberciti https://bash.cyberciti.biz/guide/Menu_driven_scripts
 
-
+#Menu items referenced in case; show_menu()
 pause(){
   read -p "Press [Enter] key to continue..." fackEnterKey #prompts user to press enter 
 }
