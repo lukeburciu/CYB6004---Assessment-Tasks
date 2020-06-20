@@ -2,7 +2,7 @@
 
 
 #Awk is used for processing the output of information downloaded via urlCheck() and passed to a csv file in the same folder path.
-  #$1 is Date, #$2 is Positives, $3 is total positives, $4 is the hash value.
+  #$1 is Category, #$2 is Engine Name, $3 is Last engine update, $4 is the Current engine version, #$5 is the method (black/whitelist) and $#6 is the result (null if no report)..
 
 awk 'BEGIN {
     FS = ",";
